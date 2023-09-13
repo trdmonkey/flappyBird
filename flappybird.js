@@ -50,7 +50,7 @@ window.onload = function () {
 
     // Ahora vamos a cargar la imagen de flappy bird
     birdImg = new Image();
-    birdImg.src = "./flappybird.png";
+    birdImg.src = "./h2.png";
     birdImg.onload = function () {
         context.drawImage(birdImg, bird.x, bird.y, bird.width, bird.height);
     }
@@ -122,7 +122,7 @@ function update () {
         var x = (board.width - textWidth) / 2;
         var y = board.height / 2;
 
-        context.fillStyle = "red";
+        context.fillStyle = "white";
         context.fillText(texto, x, y);
     }
 }
